@@ -8,7 +8,6 @@ public class Domino {
 			int subloque;
 			int fila; 
 			for (fila = (int) Math.sqrt(2 * num); fila >= 1; fila--) { //con la raiz podemos obtener el numero aproximado de bloques en primera instancia
-
 				subloque = (2 * num - fila * (fila - 1)) / (2 * fila);  //se evalua si el subloque completa una fila nueva
 				if (2 * num == fila * (2 * subloque + fila - 1)) { 
 					//comparamos si el valor de n es igual a una fila de a es 
@@ -18,10 +17,8 @@ public class Domino {
 					break;
 				}
 			}
-
 			System.out.println("Filas: " + fila);
 			System.out.println("Fichas: " + num);
 		}
-
 	}
 }
